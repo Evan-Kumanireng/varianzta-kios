@@ -26,6 +26,17 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <!-- Style CSS Devanth -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Alpine JS Dev Deployment Start -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- App DEVANTH -->
+    <script src="src/app.js"></script>
+
+    <!-- Alpine JS Dev Deployment End -->
   </head>
   <body>
     <!-- Navbar Devanth Start -->
@@ -60,7 +71,7 @@
         <div class="cart-item">
           <img src="img/products/1.jpg" alt="Product 1" />
           <div class="item-detail">
-            <h3>Deamon FF</h3>
+            <h3>Diamonds FF</h3>
             <div class="item-price">IDR 30K</div>
           </div>
           <i data-feather="trash-2" class="remove-item"></i>
@@ -68,7 +79,7 @@
         <div class="cart-item">
           <img src="img/products/2.jpg" alt="Product 2" />
           <div class="item-detail">
-            <h3>Telkomsel Seluler</h3>
+            <h3>Telkomsel Non Internet</h3>
             <div class="item-price">IDR 6K</div>
           </div>
           <i data-feather="trash-2" class="remove-item"></i>
@@ -76,8 +87,24 @@
         <div class="cart-item">
           <img src="img/products/3.jpg" alt="Product 3" />
           <div class="item-detail">
-            <h3>Telkomsel Data</h3>
+            <h3>Telkomsel Internet</h3>
             <div class="item-price">IDR 23K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/4.jpg" alt="Product 4" />
+          <div class="item-detail">
+            <h3>Kopi Hitan Asli</h3>
+            <div class="item-price">IDR 8K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/5.jpg" alt="Product 5" />
+          <div class="item-detail">
+            <h3>Top Kopi Gula</h3>
+            <div class="item-price">IDR 5K</div>
           </div>
           <i data-feather="trash-2" class="remove-item"></i>
         </div>
@@ -92,10 +119,10 @@
       <main class="content">
         <h1>Mari Santai Sejenak di Sini <span>Kaka</span></h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Necessitatibus, vitae!
+          Seteguk kopi, sejuk angin, senja Pantai Lato ajarkan arti jeda! Di
+          teluk Pesisir nan tenang, Waktu kan melambat hingga pulih senyum itu.
         </p>
-        <a href="#" class="cta">Beli Sekarang</a>
+        <a href="#" class="cta">Pesan Sekarang</a>
       </main>
     </section>
 
@@ -111,12 +138,11 @@
           <h3>Anda butuh santai sejenak?</h3>
           <p>
             Mari mampirlah sejenak bersama kami. Kopi hangat ini akan
-            menghangatkan suasana kita dengan cerita tanpa takut pada senja
+            menghangatkan suasana kita dengan cerita tanpa takut pada senja.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-            ipsa debitis vitae iste. Tempore, dolores? Labore vitae optio
-            aliquam.
+            Mari santai sejenak di sini Kaka – Pantai Lato menyuguhkan kopi,
+            senja, dan sunyi yang menyejukkan hati.
           </p>
         </div>
       </div>
@@ -126,9 +152,9 @@
     <section id="menu" class="menu">
       <h2><span>Menu</span> Kios</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ut
-        corrupti odio quis ea labore dignissimos excepturi, maiores voluptas
-        voluptatum asperiores eaque atque eum assumenda?
+        Temukan rasa damai dalam secangkir kopi dan sejuk kelapa muda, hanya di
+        Pantai Lato. Kopi dan senja, wifi dan kelapa – temukan semua rasa hidup
+        itu di tepi Pantai Lato
       </p>
       <div class="row">
         <div class="menu-card">
@@ -147,6 +173,16 @@
           <p class="menu-card-price">IDR 10K</p>
         </div>
         <div class="menu-card">
+          <img src="img/menu/5.jpg" alt="Sukaku" class="menu-card-img" />
+          <h3 class="menu-card-title">- Ikan Bakar -</h3>
+          <p class="menu-card-price">IDR 20K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/6.jpg" alt="Sukaku" class="menu-card-img" />
+          <h3 class="menu-card-title">- Wifi 30 Menit -</h3>
+          <p class="menu-card-price">IDR 0K</p>
+        </div>
+        <div class="menu-card">
           <img src="img/menu/4.jpg" alt="Sukaku" class="menu-card-img" />
           <h3 class="menu-card-title">- Kopi Susu -</h3>
           <p class="menu-card-price">IDR 8K</p>
@@ -158,8 +194,8 @@
     <section id="products" class="products">
       <h2><span>Varianzta Kios </span>Produk</h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis est iure
-        quisquam.
+        Lelahmu pantas dirayakan – dengan kelapa muda dingin, aroma kopi, dan
+        angin pantai Lato.
       </p>
       <div class="row">
         <div class="product-card">
@@ -173,7 +209,7 @@
             <img src="img/products/1.jpg" alt="Product 1" />
           </div>
           <div class="product-content">
-            <h3>Deamond FF</h3>
+            <h3>Diamonds FF</h3>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
@@ -181,7 +217,7 @@
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star"></i>
             </div>
-            <div class="product-price">IDR 30K <span>IDR 50K</span></div>
+            <div class="product-price">Rp 30.000 <span>Rp 35.000</span></div>
           </div>
         </div>
         <div class="product-card">
@@ -195,7 +231,7 @@
             <img src="img/products/2.jpg" alt="Product 2" />
           </div>
           <div class="product-content">
-            <h3>Telkomsel Seluler</h3>
+            <h3>Telkomsel Non Internet</h3>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
@@ -203,7 +239,7 @@
               <i data-feather="star"></i>
               <i data-feather="star"></i>
             </div>
-            <div class="product-price">IDR 6K <span>IDR 7K</span></div>
+            <div class="product-price">Rp 6.000 <span>Rp 7.000</span></div>
           </div>
         </div>
         <div class="product-card">
@@ -217,7 +253,7 @@
             <img src="img/products/3.jpg" alt="Product 3" />
           </div>
           <div class="product-content">
-            <h3>Telkomsel Data</h3>
+            <h3>Telkomsel Internet</h3>
             <div class="product-stars">
               <i data-feather="star"></i>
               <i data-feather="star"></i>
@@ -225,7 +261,51 @@
               <i data-feather="star"></i>
               <i data-feather="star"></i>
             </div>
-            <div class="product-price">IDR 23K <span>IDR 25K</span></div>
+            <div class="product-price">Rp 23.000 <span>Rp 25.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/4.jpg" alt="Product 4" />
+          </div>
+          <div class="product-content">
+            <h3>Kopi Hitam Asli</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Rp 8.000 <span>Rp 10.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/5.jpg" alt="Product 5" />
+          </div>
+          <div class="product-content">
+            <h3>Top Kopi Gula</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">Rp 5.000 <span>Rp 8.000</span></div>
           </div>
         </div>
       </div>
@@ -237,7 +317,8 @@
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, cum?
+        Bersantai di Pantai Lato kini lebih seru – ada kopi, wifi, pisang
+        goreng, dan kelapa muda yang menggoda!
       </p>
       <div class="row">
         <iframe
@@ -250,17 +331,17 @@
         <form action="">
           <div class="input-group">
             <i data-feather="user"></i>
-            <input type="text" placeholder="nama" />
+            <input type="text" placeholder="Nama" />
           </div>
           <div class="input-group">
             <i data-feather="mail"></i>
-            <input type="text" placeholder="email" />
+            <input type="text" placeholder="Email" />
           </div>
           <div class="input-group">
             <i data-feather="phone"></i>
-            <input type="text" placeholder="no hp" />
+            <input type="text" placeholder="No Telp" />
           </div>
-          <button type="submit" class="btn">kirim pesan</button>
+          <button type="submit" class="btn">Kirim Pesan</button>
         </form>
       </div>
     </section>
@@ -294,11 +375,10 @@
         <div class="modal-content">
           <img src="img/products/1.jpg" alt="Product 1" />
           <div class="product-content">
-            <h3>Deamon FF</h3>
+            <h3>Diamonds FF</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
-              aspernatur ex reprehenderit rem voluptate nihil natus? Autem odio
-              itaque nesciunt quibusdam, eum animi nostrum enim.
+              Kami menjual beberapa produk digital seperti pulsa reguler dan
+              pulsa Internet dengan harga terjangkau.
             </p>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
