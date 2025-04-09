@@ -17,7 +17,7 @@ document.querySelector("#search-button").onclick = (e) => {
 
 // Toggle Shopping Cart Active Devanth MTC
 const shoppingCart = document.querySelector(".shopping-cart");
-document.querySelector("#shopping-cart-button").onclick = () => {
+document.querySelector("#shopping-cart-button").onclick = (e) => {
   shoppingCart.classList.toggle("active");
   e.preventDefault();
 };
